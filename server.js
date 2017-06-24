@@ -12,7 +12,13 @@ app.get('/', function(req,res){
     res.send("hello world!")
 })
 
+app.post('/', function(req,res){
+    console.log('got request')
+    console.log(req.body)
+    res.send("hello world!")
+})
 
-app.listen(3000, function(){
-    console.log("app listening on 3000")
+
+app.listen(3030, function(){
+    console.log("app listening on 3030")
 })
